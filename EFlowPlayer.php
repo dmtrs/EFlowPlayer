@@ -7,7 +7,7 @@
  *
  * ###Support
  * - Yii 1.1.x
- * - flowplayer 3.2.7
+ * - flowplayer 3.2.6
  *
  * This base code was generated with the [gii-extension-generator](http://www.yiiframework.com/extension/gii-extension-generator/)
  * @version 0.1
