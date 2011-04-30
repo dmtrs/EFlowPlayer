@@ -1,9 +1,12 @@
 EFlowPlayer
 ===========
 Yii extension for the flowplayer plugin.
+###Description 
+This is an alpha version of the extension. 
+It supports only the basic configuration.
 
 ###Details
-- version 0.1
+- Version 0.2 alpha
 - Dimitrios Mengidis
 
 ###Support
