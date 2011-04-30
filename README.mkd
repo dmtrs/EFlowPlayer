@@ -16,4 +16,4 @@ Yii extension for the flowplayer plugin.
 - [Repository](http://www.github.com/dmtrs/EFlowPlayer)
 - [while(true)](http://dmtrs.devio.us/blog)
 
-__(((This base code was generated with the [gii-extension-generator](http://www.yiiframework.com/extension/gii-extension-generator/)))__
+__(This base code was generated with the [gii-extension-generator](http://www.yiiframework.com/extension/gii-extension-generator/))__
