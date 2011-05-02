@@ -30,9 +30,9 @@ If we want to set some html options to the video container.Example:
 <code>
     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
          'flv'=>array(
-             'http://ringtales.s3.amazonaws.com/d180.flv',
-             'http://ringtales.s3.amazonaws.com/d181.flv',
              'http://ringtales.s3.amazonaws.com/d182.flv',
+             'http://ringtales.s3.amazonaws.com/d181.flv',
+             'http://ringtales.s3.amazonaws.com/d180.flv',
           ),
          'htmlOptions'=>array(
              'id'=>'video-',
@@ -40,6 +40,11 @@ If we want to set some html options to the video container.Example:
          ),
      ));
 </code>
+Result of this code will be 3 containers with id <code>video-</code> + key of the video url position in the array, like:
+- container with id <code>'video-0'</code> points to <code>d182.flv</code>
+- container with id <code>'video-1'</code> points to <code>d181.flv</code>
+- container with id <code>'video-2'</code> points to <code>d180.flv</code>
+
 #####Associative array
 If we want to set some html options to the video container.Example:
 <code>
