@@ -17,7 +17,7 @@ The most minimal code to get a video.Example:
 If we want to set some html options to the video container.Example:
 <code>
     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
-         'flv'=>'http://192.168.1.38/spool/d436.flv',
+         'flv'=>"http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv",
          'htmlOptions'=>array(
              'id'=>'testingplayer',
              'style'=>'width: 320px; height: 160px;',
