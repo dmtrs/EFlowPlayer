@@ -7,28 +7,72 @@ It supports only the basic configuration.
 ###Use
 Here are some examples on how to use this extension.
 ####Minimal
-Code:
+The most minimal code to get a video.Example:
 <code>
     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
         'flv'=>"http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv",
      ));
 </code>
-Result:
-<code><div id="yw0"></div></code>
-
 ####With style and id
+If we want to set some html options to the video container.Example:
 <code>
     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
          'flv'=>'http://192.168.1.38/spool/d436.flv',
          'htmlOptions'=>array(
              'id'=>'testingplayer',
-              'style'=>'width: 320px; height: 160px;',
+             'style'=>'width: 320px; height: 160px;',
          ),
      ));
 </code>
-Result: 
-<code><div id="testingplayer" style="width: 320px; height: 160px;"></div></code>
-
+####I need more videos
+#####Asceding style
+If we want to set some html options to the video container.Example:
+<code>
+    $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
+         'flv'=>array(
+             'http://ringtales.s3.amazonaws.com/d180.flv',
+             'http://ringtales.s3.amazonaws.com/d181.flv',
+             'http://ringtales.s3.amazonaws.com/d182.flv',
+          ),
+         'htmlOptions'=>array(
+             'id'=>'video-',
+             'style'=>'width: 320px; height: 160px;',
+         ),
+     ));
+</code>
+#####Associative array
+If we want to set some html options to the video container.Example:
+<code>
+    $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
+         'flv'=>array(
+             'd180'=>'http://ringtales.s3.amazonaws.com/d180.flv',
+             'd181'=>'http://ringtales.s3.amazonaws.com/d181.flv',
+             'd182'=>'http://ringtales.s3.amazonaws.com/d182.flv',
+         ),
+         'htmlOptions'=>array(
+             'id'=>'testingplayer',
+             'style'=>'width: 320px; height: 160px;',
+         ),
+     ));
+</code>
+#####Mixed
+This is a way to use associative array and asceding style.
+Although i think of something dangarous and akwark there still a 
+posibility. Example:
+<code>
+    $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
+         'flv'=>array(
+             'http://ringtales.s3.amazonaws.com/d180.flv',
+             'http://ringtales.s3.amazonaws.com/d181.flv',
+             'd180'=>'http://ringtales.s3.amazonaws.com/d180.flv',
+             'd181'=>'http://ringtales.s3.amazonaws.com/d181.flv',
+         ),
+         'htmlOptions'=>array(
+             'id'=>'testingplayer',
+             'style'=>'width: 320px; height: 160px;',
+         ),
+     ));
+</code>
 ###Details
 - Version 0.2 alpha
 - Dimitrios Mengidis
