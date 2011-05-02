@@ -74,7 +74,7 @@ posibility. Example:
      ));
 </code>
 ###Details
-- Version 0.2 alpha
+- Version 0.3 alpha
 - Dimitrios Mengidis
 
 ###Support

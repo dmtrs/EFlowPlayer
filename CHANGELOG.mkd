@@ -1,8 +1,11 @@
 EFlowPlayer
 ===========
 ###ROADMAP
-- $flv support for array and idataprovider
+- Support for IDataProvider.
+- flowplayer() configuration.  
 ###CHANGELOG 
+####Version 0.3
+- Flv support array.
 ####Version 0.2
 - Flv url as string.
 - Support for different tags as video container.  
