@@ -9,6 +9,32 @@
  * This is an alpha version of the extension. 
  * It supports only the basic configuration.
  *
+ * ###Use
+ * Here are some examples on how to use this extension.
+ *
+ * ####Minimal
+ * Code:
+ * <code>
+ *     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
+ *         'flv'=>"http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv",
+ *     ));
+ * </code>
+ * Result:
+ * <code><div id="yw0"></div></code>
+ *
+ * ####With style and id
+ * <code>
+ *     $this->widget('ext.EFlowPlayer.EFlowPlayer', array(
+ *         'flv'=>'http://192.168.1.38/spool/d436.flv',
+ *         'htmlOptions'=>array(
+ *             'id'=>'testingplayer',
+ *              'style'=>'width: 320px; height: 160px;',
+ *         ),
+ *     ));
+ * </code>
+ * Result: 
+ * <code><div id="testingplayer" style="width: 320px; height: 160px;"></div></code>
+ *
  * ###Support
  * - Yii 1.1.x
  * - flowplayer 3.2.6
@@ -20,11 +46,13 @@
 class EFlowPlayer extends CWidget
 {
     /** The flv url.
-     * @var string
+     * If the flv is a string the will be one video render.
+     * If flv is an array then multiple video will be generated.
+     * @var mixed
      * @since 0.2
      */
     public $flv;
-    /** Tag element player will be.
+    /** Tag element player use for container.
      * @var string
      * @since 0.2
      */
